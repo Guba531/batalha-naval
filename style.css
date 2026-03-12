@@ -1,0 +1,64 @@
+body {
+    background: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.jogo-container {
+    display: inline-block;
+}
+
+.x {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.letra {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #00d2ff;
+}
+
+.half-tabuleiro {
+    display: flex;
+}
+
+.y {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.numero {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #00d2ff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    background: #333;
+    border: 2px solid #333;
+}
+
+.quadrado {
+    width: 40px;
+    height: 40px;
+    background: #006994;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quadrado:hover {
+    background: #0080b5;
+}
