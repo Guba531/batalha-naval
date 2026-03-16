@@ -1,64 +1,63 @@
-body {
-    background: #1a1a1a;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+body{
+background:#1a1a1a;
+color:white;
+font-family:sans-serif;
+display:flex;
+justify-content:center;
+padding:50px;
 }
 
-.jogo-container {
-    display: inline-block;
+.arena{
+display:flex;
+gap:60px;
 }
 
-.x {
-    display: flex;
-    margin-left: 30px;
-    margin-bottom: 5px;
+.tabuleiro-completo{
+display:grid;
+grid-template-columns:40px 1fr;
+grid-template-rows:40px 1fr;
 }
 
-.letra {
-    width: 40px;
-    text-align: center;
-    font-weight: bold;
-    color: #00d2ff;
+.vazio{
+width:40px;
+height:40px;
 }
 
-.half-tabuleiro {
-    display: flex;
+.letras{
+display:grid;
+grid-template-columns:repeat(10,40px);
 }
 
-.y {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+.numeros{
+display:grid;
+grid-template-rows:repeat(10,40px);
 }
 
-.numero {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    color: #00d2ff;
+.letra,.numero{
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+color:#00d2ff;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(10, 40px);
-    grid-template-rows: repeat(10, 40px);
-    gap: 2px;
-    background: #333;
-    border: 2px solid #333;
+.grid{
+display:grid;
+grid-template-columns:repeat(10,40px);
+grid-template-rows:repeat(10,40px);
+gap:2px;
+background:#333;
 }
 
-.quadrado {
-    width: 40px;
-    height: 40px;
-    background: #006994;
-    cursor: pointer;
-    transition: 0.2s;
+.quadrado{
+width:40px;
+height:40px;
+background:#006994;
+cursor:pointer;
+transition:0.2s;
 }
 
-.quadrado:hover {
-    background: #0080b5;
+.quadrado:hover{
+background:#0099d6;
+transform:scale(1.05);
 }
